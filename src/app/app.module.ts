@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { TaxmanagerComponent } from './taxmanager/taxmanager.component';
 import { TeamComponent } from './team/team.component';
+import { BillmanagerComponent } from './billmanager/billmanager.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TeamComponent } from './team/team.component';
     NavbarComponent,
     FooterComponent,
     TaxmanagerComponent,
-    TeamComponent
+    TeamComponent,
+    BillmanagerComponent
   ],
 
   imports: [
@@ -23,7 +25,8 @@ import { TeamComponent } from './team/team.component';
     AppRoutingModule,
     RouterModule.forRoot([
       {path: '', component: TaxmanagerComponent},
-      {path: 'team', component: TeamComponent}
+      {path: 'team', component: TeamComponent},
+      {path: 'bills', component: BillmanagerComponent},
     ]),  
   ],
 
