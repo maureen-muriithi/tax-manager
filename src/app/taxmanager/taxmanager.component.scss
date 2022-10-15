@@ -1,0 +1,486 @@
+.logo {
+    width: 45%;
+  }
+  
+  .background {
+    background-color: #d9d9d9;
+  }
+  
+  .bgtwo {
+    height: 100vh;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: #d9d9d9 !important;
+    position: relative;
+  }
+  
+  .three {
+    margin-top: 50px;
+  }
+  
+  .second {
+    margin-top: 20px;
+  }
+  
+  label {
+    padding-left: 100px;
+    text-align: left;
+    font-weight: 700;
+  }
+  
+  .ksh {
+    margin-right: 300px;
+    float: right;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    color: #000;
+  }
+  
+  .ksh2 {
+    margin-left: 100px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+  }
+  
+  .add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .btn-add {
+    background-color: #1cb484;
+    width: 10%;
+    position: absolute;
+    right: 35%;
+    padding: 5px;
+    border-radius: 20px !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .new {
+    padding-left: 100px;
+    text-align: left;
+    right: 35%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+  }
+  
+  .balance {
+    position: absolute;
+    bottom: 25%;
+  }
+  
+  .kshbalance {
+    margin-left: 330px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    color: #000;
+  }
+  
+  ::placeholder {
+    color: #000;
+    font-weight: 700;
+    opacity: 1;
+    /* Firefox */
+  }
+  
+  .manager {
+    background-color: #1cb484;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 20px !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+  }
+  
+  .card-title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -200px;
+  }
+  
+  .title1 {
+    text-align: left;
+  }
+  
+  .title2 {
+    text-align: right;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-item {
+    padding: 0 25px;
+    font-weight: bold;
+  }
+  
+  .logo2 {
+    width: 20%;
+  }
+  
+  .footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+    background-color: #d9d9d9;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  
+  .footer2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .btn1 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    width: 20%;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .btn1:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+  }
+  
+  .btn2 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    width: 20%;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+  .btn2:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+  }
+  
+  /**tabs*/
+  
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+  }
+  
+  .btnz1 {
+    background-color: #1cb484;
+    width: 20%;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 20px !important;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+  }
+  
+  .btnz1:hover {
+    cursor: pointer;
+  }
+  
+  .btnz2 {
+    background-color: #1cb484;
+    width: 20%;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 20px !important;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+    margin-left: 10px;
+  }
+  
+  .btnz2:hover {
+    cursor: pointer;
+  }
+  
+  .btn {
+    background-color: #1cb484;
+    width: 48%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 20px !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+  }
+  
+  .buttons2 {
+    position: absolute;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: white;
+  }
+  
+  .btn.active {
+    background-color: #1cb484;
+  }
+  
+  .btnz.active {
+    background-color: #1cb484;
+  }
+  
+  button.inactive {
+    background-color: #aaa !important;
+  }
+  
+  .content.active {
+    padding: 2rem;
+    display: block;
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .card-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .bgtwo {
+      position: relative;
+      height: 130vh;
+    }
+  
+    .buttons {
+      position: absolute;
+      bottom: 0;
+    }
+  
+    .btn1 {
+      width: 50%;
+    }
+  
+    .btn2 {
+      width: 50%;
+      margin-left: 10px;
+    }
+  
+    .title2 {
+      margin-left: 20px;
+    }
+  
+    .ksh {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      float: none;
+    }
+  
+    .ksh2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0px;
+      float: none;
+      border: 1px solid black;
+      border-radius: 20px;
+      background-color: #d9d9d9;
+      color: #000;
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  
+    .balance {
+      bottom: 10%;
+      left: -13%;
+      margin-left: 0;
+    }
+  
+    .kshbalance {
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 0px) and (max-width: 425px) {
+    .logo {
+      width: 50%;
+    }
+  
+    .logo2 {
+      width: 30%;
+    }
+  
+    .bgtwo {
+      width: 100%;
+      overflow-x: hidden;
+  
+      height: 120vh;
+      position: relative;
+    }
+  
+    .first {
+      margin-top: 10px;
+    }
+  
+    .three {
+      margin-top: 0px;
+    }
+  
+    .ksh2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0px;
+      float: none;
+      border: 1px solid black;
+      border-radius: 20px;
+      background-color: #d9d9d9;
+      color: #000;
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  
+    .manager {
+      width: 50%;
+      margin-top: 5px;
+      margin-left: 0;
+    }
+  
+    .title1 {
+      display: none;
+    }
+  
+    .title2 {
+      display: none;
+    }
+  
+    label {
+      padding-left: 0px;
+    }
+  
+    .btnz1 {
+      margin-left: 0px;
+      width: 50%;
+    }
+  
+    .btnz2 {
+      margin-left: 0px;
+      width: 50%;
+    }
+  
+    .balance {
+      bottom: 15%;
+    }
+  
+    .kshbalance {
+      margin-left: 0;
+    }
+  
+    .ksh {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0px;
+      float: none;
+      border: 1px solid black;
+      border-radius: 20px;
+      background-color: #d9d9d9;
+      color: #000;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0px;
+      position: absolute;
+      bottom: 0;
+    }
+  
+    .btn1 {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 5px;
+      width: 50%;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: 1px solid white;
+    }
+  
+    .btn2 {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 5px;
+      width: 80%;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: 1px solid white;
+      margin-left: 10px;
+    }
+    .footer1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 0px;
+      background-color: #d9d9d9;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+  
+    .footer2 {
+      padding-left: 0px;
+      margin-left: -100px;
+      font-size: 15px;
+    }
+  }
