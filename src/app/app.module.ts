@@ -3,20 +3,35 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { TaxmanagerComponent } from './taxmanager/taxmanager.component';
+import { TeamsComponent } from './teams/teams.component';
+
+const routes: Routes = [
+
+  {
+    path: 'team',
+    component: TeamsComponent
+  }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    TaxmanagerComponent
+    TaxmanagerComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes),
+  ],
+  exports: [
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
