@@ -42,78 +42,51 @@
     </div>
 
     <div class="sections">
-      <div class="content content2 active">
-        <div class="card text-black bgtwo">
-          <div class="card-img-overlay three">
-            <div class="card-text bill-cats">
-              <article class="item">
-                <p>
-                  <label class="second">Net Pay:</label>
-                  <input
-                    class="ksh net2"
-                    name="net"
-                    type="number"
-                    placeholder="Ksh."
-                  />
-                </p>
-              </article>
+      <button type="button" class="btn btn-primary">Add Bill +</button>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Bill Name</th>
+            <th scope="col">Bill Description</th>
+            <th scope="col">Bill Amount</th>
+            <th scope="col">Bill Date</th>
+            <th scope="col">Actions</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of myData">
+            <th scope="row">{{ item.id }}</th>
+            <td>
+              {{ item.billName }}
+            </td>
+            <td>{{ item.billDescription }}</td>
+            <td>{{ item.billAmount }}</td>
+            <td>{{ item.billDate }}</td>
 
-              <article class="item">
-                <p>
-                  <label>Food:</label>
-                  <input
-                    class="ksh bill"
-                    name="food"
-                    type="number"
-                    placeholder="Ksh."
-                  />
-                </p>
-              </article>
-              <article class="item">
-                <p>
-                  <label>Rent:</label>
-                  <input
-                    class="ksh bill"
-                    name="food"
-                    type="number"
-                    placeholder="Ksh."
-                  />
-                </p>
-              </article>
-
-              <article class="item">
-                <p>
-                  <label>Shopping:</label>
-                  <input
-                    class="ksh bill"
-                    name="shopping"
-                    type="number"
-                    placeholder="Ksh."
-                  />
-                </p>
-              </article>
-            </div>
-
-            <div class="add-display hidden">
-              <label>ADD BILL:</label>
-              <input class="new new-category" name="new" type="text" />
-              <button class="btn-add btn-add-add">Add</button>
-            </div>
-            <div>
-              <button class="btn-add btn-add-new">NEW</button>
-            </div>
-          </div>
-
-          <div class="buttons">
-            <button class="btn1 calculate2">CALCULATE</button>
-            <span class="balance-plate hidden"
-              >Balance: <span class="bal" id="bal">1500</span>/=&nbsp;</span
-            >
-          </div>
-        </div>
-      </div>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary"
+                (click)="onUpdate(item.id)"
+              >
+                Update
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-danger"
+                (click)="onDelete(item.id)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <script src="script.js" defer></script>
-    <app-footer></app-footer>
   </body>
 </html>
