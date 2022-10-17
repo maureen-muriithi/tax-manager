@@ -8,6 +8,9 @@
 .buttonsstyle {
   color: #000;
 }
+.sections{
+  margin-top: 100px;
+}
 
 .bgtwo {
   height: 100vh;
@@ -240,17 +243,7 @@ label {
   cursor: pointer;
 }
 
-.btn {
-  background-color: #1cb484;
-  width: 48%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  border-radius: 20px !important;
-  text-transform: uppercase;
-  font-weight: 700 !important;
-}
+
 
 .btnz a {
   text-decoration: none;
@@ -266,13 +259,7 @@ label {
   width: 100%;
 }
 
-.btn:hover {
-  background-color: white;
-}
 
-.btn.active {
-  background-color: #1cb484;
-}
 
 .btnz.active {
   background-color: #1cb484;

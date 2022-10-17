@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { TaxmanagerComponent } from './taxmanager/taxmanager.component';
 import { TeamComponent } from './team/team.component';
 import { BillmanagerComponent } from './billmanager/billmanager.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { BillmanagerComponent } from './billmanager/billmanager.component';
       {path: '', component: TaxmanagerComponent},
       {path: 'team', component: TeamComponent},
       {path: 'bills', component: BillmanagerComponent},
-    ]),  
+    ]), 
+    HttpClientModule, NgbModule 
   ],
 
   providers: [],
